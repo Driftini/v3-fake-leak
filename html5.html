@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/98.css">
+        <style>
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            label {
+                margin-right: 6px;
+            }
+
+            li {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 6px;
+            }
+
+            body {
+                background: silver;
+            }
+
+            input[type="color"] {
+                appearance: none;
+                border: 1px #000 solid;
+                padding: 0;
+            }
+
+            button.col {
+                padding: 4px !important;
+                min-width: 0px; 
+            }
+
+            input[type="color"] {
+                width: 40px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><label>Color</label><button class="col"><input type="color" value="#c3ff00"></button></li>
+            <li><label>Color</label><button class="col"><input type="color" value="#00ffff"></button></li>
+            <li><label>File</label><button>Choose File</button><label style="margin-left:3px">No file chosen</label></li>
+            <li><label>Range</label> <div class="field-row" style="width: 300px"><input type="range" min="0" max="50" value="25"></div></li>
+            <li><label>Textarea</label><textarea>Marvin trudged on down the corridor, still moaning. "...and then of course I've got this terrible pain in all the diodes down my left hand side..."
+                "No?" said Arthur grimly as he walked along beside him. "Really?"
+                "Oh yes," said Marvin, "I mean I've asked for them to be replaced but no one ever listens."
+                "I can imagine."</textarea></li>
+            <li><div class="field-row"><label>Text</label><input type="text" placeholder="type something here"></div></li>
+            <li><div class="field-row"><label>Number</label><input type="text" value="13"></div></li>
+            <li><label>Select</label><select><option>Arcane Jill Watson</option><option>John Watson</option></select></li>
+            <li><label>Select Group</label><select>
+                <optgroup label="Solar System">
+                    <optgroup label="Inner">
+                        <option>Mercury</option>
+                        <option>Venus</option>
+                        <option>Earth</option>
+                        <option>Mars</option>
+                    </optgroup>
+                    <optgroup label="Outer">
+                        <option>Jupiter</option>
+                        <option>Saturn</option>
+                        <option>Uranus</option>
+                        <option>Neptune</option>
+                        <option>Pluto</option>
+                    </optgroup>
+                </optgroup>
+            </select></li>
+            <li><label>Select</label><ul class="tree-view">
+                <li>Total Perspective Vortex</li>
+                <li>Milliways</li>
+                <li>Frogstar World B</li>
+                <li>Belgium</li>
+            </ul></li>
+            <li><label>Datalist</label><input type="text" placeholder="Things to define"></li>
+            <li><label>Date</label><input type="text" value="dd/mm/yyyy"></li>
+            <br><br><br><br><br><br><br><br><br>
+        </ul>
+    </body>
+</html>

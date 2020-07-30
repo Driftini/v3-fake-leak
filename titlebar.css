@@ -1,17 +1,17 @@
 @font-face {
-    font-family: "Pixelated MS Sans Serif";
-    src: url("https://raw.githack.com/jdan/98.css/main/fonts/converted/ms_sans_serif.woff") format("woff");
-    src: url("https://raw.githack.com/jdan/98.css/main/fonts/converted/ms_sans_serif.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Pixelated MS Sans Serif";
+  src: url("https://raw.githack.com/jdan/98.css/main/fonts/converted/ms_sans_serif.woff") format("woff");
+  src: url("https://raw.githack.com/jdan/98.css/main/fonts/converted/ms_sans_serif.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Pixelated MS Sans Serif";
-    src: url("https://raw.githack.com/jdan/98.css/main/fonts/converted/ms_sans_serif_bold.woff") format("woff");
-    src: url("https://raw.githack.com/jdan/98.css/main/fonts/converted/ms_sans_serif_bold.woff2") format("woff2");
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Pixelated MS Sans Serif";
+  src: url("https://raw.githack.com/jdan/98.css/main/fonts/converted/ms_sans_serif_bold.woff") format("woff");
+  src: url("https://raw.githack.com/jdan/98.css/main/fonts/converted/ms_sans_serif_bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
 }
 
 *, button, input {
@@ -20,19 +20,20 @@
 }
 
 .ui_window__head__title {
-    transform: translate(0,2px);
-    font-weight: bold;
+  transform: translate(0,2px);
+  font-weight: bold;
+  padding-left: 1px;
 }
 
 .ui_window {
     box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px grey,inset 2px 2px #fff;
     background: silver;
-    padding: 3;
+    padding: 3px;
     border: none;
 }
 
 .ui_window__head {
-    height: 20px;
+  height: 20px;
 }
 
 .ui_window__head button {
@@ -40,7 +41,7 @@
     display: block;
     min-width: 16px;
     min-height: 15px;
-    
+  
     background: silver;
     box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
     border: none;
@@ -68,9 +69,14 @@
 }
 
 .ui_window__head__close::before, .ui_window__head__maximize::before, .ui_window__head__minimize::before {
-    display: none;
+  display: none;
 }
 
 .ui_window__head__icon {
-    margin-left: 2px;
+margin-left: 2px;
+margin-right: 3px;
+}
+
+#ui_menu_3 #ui_menu__item_23, #ui_menu_3 #ui_menu__item_21, #ui_menu_3 #ui_menu__item_19 {
+display: none;
 }
