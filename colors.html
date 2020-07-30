@@ -1,21 +1,60 @@
+<!--RUN IN IFRAME-->
 <html>
     <head>
         <link rel="stylesheet" href="https://unpkg.com/98.css">
         <style>
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            label {
+                margin-right: 6px;
+            }
+
+            li {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 6px;
+            }
+
             body {
                 background: silver;
             }
 
             input[type="color"] {
                 appearance: none;
-                background: silver;
-                box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
-                border: none;
+                border: 1px #000 solid;
+                padding: 0;
+            }
+
+            button.col {
+                padding: 4px !important;
+            }
+
+            span.center {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         </style>
     </head>
     <body>
-        <label for="primary">Color 1</label><input type="color" id="primary"><br>
-        <label for="secondary">Color 2</label><input type="color" id="secondary">
+        <ul>
+        <li><label for="primary">Color 1</label><button class="col"><input type="color" id="primary"></button></li>
+        <li><label for="secondary">Color 2</label><button class="col"><input type="color" id="secondary"></button></li>
+        <li><input type="checkbox" id="bg" checked><label for="bg">Background</label></li>
+        <li><input type="checkbox" id="title" checked><label for="title">Windows</label></li>
+        </ul>
+        <span class="center"><button id="confirm">OK</button></span>
+
+        <script>
+            top.$file.open("/a/leak/colors.js", "String", (script)=>{
+                let scriptElement = document.createElement("script")
+                scriptElement.innerHTML = script
+                document.body.appendChild(scriptElement)
+            })
+        </script>
     </body>
 </html>
