@@ -9,13 +9,13 @@ console.log("COLORS.JS CHECK END")
 document.getElementById("confirm").addEventListener("click", ()=>{
     top.colorElement.innerHTML = ""
     
-    if(document.getElementById(bg).checked) {
+    if(document.getElementById("bg").checked) {
         top.colorElement.innerHTML = top.colorElement.innerHTML + "#s42_background{background:linear-gradient(135deg,"+document.getElementById("primary").value+","+document.getElementById("secondary").value+")}"
     }
     
-    if(document.getElementById(title).checked) {
+    if(document.getElementById("title").checked) {
         top.colorElement.innerHTML = top.colorElement.innerHTML + ".ui_window__head,.ui_window--active .ui_window__head{background:linear-gradient(135deg,"+document.getElementById("primary").value+","+document.getElementById("secondary").value+")}"
     }
 
-    top.document.head.appendChild(colorElement)
+    top.document.head.appendChild(top.colorElement)
 })
